@@ -1,0 +1,139 @@
+2021-05-12 10:43:48,756 [main] ERROR [TestPrintException] - java.lang.ArrayIndexOutOfBoundsException: 5
+2021-05-12 10:43:48,757 [main] ERROR [TestPrintException] - 5
+2021-05-12 10:43:48,757 [main] ERROR [TestPrintException] - java.lang.ArrayIndexOutOfBoundsException: 5
+2021-05-12 10:43:48,758 [main] ERROR [TestPrintException] - 程序异常：
+java.lang.ArrayIndexOutOfBoundsException: 5
+	at TestPrintException.main(TestPrintException.java:16)
+2021-05-12 11:03:33,830 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:03:33,906 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:03:34,958 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:03:35,519 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:05:22,178 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:05:22,252 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:05:23,246 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:05:24,596 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:08:36,592 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:08:36,674 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:08:37,708 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:08:38,158 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:12:36,355 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:12:36,418 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:12:37,156 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:12:37,618 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:19:38,995 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:19:39,064 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:19:39,938 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:19:41,495 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:32:47,061 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:32:47,146 [RMI TCP Connection(5)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:32:48,711 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:32:50,603 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:36:41,772 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:36:41,849 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:36:45,560 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:36:45,883 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 11:40:10,185 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 11:40:10,260 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 11:40:11,209 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 11:40:11,543 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 12:01:15,581 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 12:01:15,631 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 12:01:16,322 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 12:01:17,357 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 12:03:34,801 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 12:03:34,857 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 12:03:35,576 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 12:03:35,920 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 12:08:45,894 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 12:08:45,958 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 12:08:46,873 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 12:08:47,204 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 12:13:10,167 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 12:13:10,253 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 12:13:11,299 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 12:13:11,859 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 12:16:40,983 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 12:16:41,035 [RMI TCP Connection(5)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 12:16:41,868 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 12:16:42,201 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 12:18:47,336 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 12:18:47,398 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 12:18:48,504 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 12:18:49,065 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:02:05,556 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:02:05,621 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:02:06,547 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:02:06,876 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:02:55,813 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:02:55,874 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:02:57,777 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:02:58,958 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:07:56,869 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:07:56,943 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:08:00,674 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:08:01,090 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:10:50,590 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:10:50,664 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:10:52,021 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:10:52,745 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:12:11,151 [http-nio-8080-exec-8] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-12 14:12:50,444 [http-nio-8080-exec-2] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-12 14:15:36,366 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:15:36,493 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:15:37,456 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:15:37,803 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:16:19,276 [http-nio-8080-exec-9] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-12 14:24:35,342 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:24:35,424 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:24:36,419 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:24:36,999 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:46:25,268 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:46:25,316 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:46:26,050 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:46:26,383 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:46:26,649 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-12 14:46:26,653 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-12 14:46:26,653 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-12 14:46:26,654 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-12 14:46:26,654 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-12 14:46:26,655 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-12 14:50:02,273 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:50:02,320 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:50:03,024 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:50:03,391 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:50:03,652 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-12 14:50:03,655 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-12 14:50:03,656 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-12 14:50:03,657 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-12 14:50:03,657 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-12 14:50:03,658 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-12 14:55:38,938 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 14:55:38,992 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 14:55:39,701 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 14:55:40,719 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 14:55:41,006 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-12 14:55:41,009 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-12 14:55:41,010 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-12 14:55:41,010 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-12 14:55:41,010 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-12 14:55:41,011 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-12 15:03:55,244 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 15:03:55,318 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 15:03:56,420 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 15:03:56,831 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 15:10:26,041 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 15:10:26,100 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 15:10:26,845 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 15:10:27,431 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 15:17:13,240 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 15:17:13,325 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 15:17:15,375 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 15:17:16,005 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 15:40:04,556 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 15:40:04,650 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 15:40:05,776 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 15:40:06,119 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-12 15:49:48,301 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-12 15:49:48,384 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-12 15:49:49,550 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-12 15:49:49,955 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited

@@ -1,0 +1,400 @@
+2022-07-18 13:40:47,817 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 13:40:47,889 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 13:40:48,820 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:05:13,082 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 14:05:13,089 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 14:05:13,089 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 14:05:13,096 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 14:06:54,725 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 14:06:54,805 [RMI TCP Connection(5)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 14:06:55,766 [RMI TCP Connection(5)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:07:50,451 [http-nio-8080-exec-5] ERROR [com.example.exception.GlobalExceptionHandler] - 未知异常：
+java.lang.NullPointerException
+	at com.example.controller.UserController.testHttpClientWithPost(UserController.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-07-18 14:11:12,863 [http-nio-8080-exec-6] ERROR [com.example.exception.GlobalExceptionHandler] - 未知异常：
+java.lang.NullPointerException
+	at com.example.controller.UserController.testHttpClientWithPost(UserController.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-07-18 14:11:15,560 [http-nio-8080-exec-7] ERROR [com.example.exception.GlobalExceptionHandler] - 未知异常：
+org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'password' is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:204)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-07-18 14:11:21,712 [http-nio-8080-exec-9] ERROR [com.example.exception.GlobalExceptionHandler] - 未知异常：
+org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'password' is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:204)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-07-18 14:14:40,793 [http-nio-8080-exec-5] ERROR [com.example.exception.GlobalExceptionHandler] - 未知异常：
+java.lang.NullPointerException
+	at com.example.controller.UserController.testHttpClientWithPost(UserController.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-07-18 14:31:59,817 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 14:31:59,824 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 14:31:59,825 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 14:31:59,830 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 14:33:53,569 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 14:33:53,646 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 14:33:54,628 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:34:22,158 [http-nio-8080-exec-9] ERROR [com.example.exception.GlobalExceptionHandler] - 未知异常：
+java.lang.NullPointerException
+	at com.example.controller.UserController.testHttpClientWithPost(UserController.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2022-07-18 14:37:50,702 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 14:37:50,709 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 14:37:50,709 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 14:37:50,716 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 14:39:45,631 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 14:39:45,722 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 14:39:46,774 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:40:16,063 [http-nio-8080-exec-8] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：null
+2022-07-18 14:42:24,163 [http-nio-8080-exec-5] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：null
+2022-07-18 14:49:59,760 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 14:49:59,766 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 14:49:59,766 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 14:49:59,773 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 14:51:06,353 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 14:51:06,431 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 14:51:07,398 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:51:30,824 [http-nio-8080-exec-7] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：当前请求已经调用过方法getInputStream()
+2022-07-18 14:51:51,672 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 14:51:51,680 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 14:51:51,680 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 14:51:51,689 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 14:52:47,454 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 14:52:47,532 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 14:52:48,525 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:53:19,302 [http-nio-8080-exec-1] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：当前请求已经调用过方法getInputStream()
+2022-07-18 14:53:52,358 [http-nio-8080-exec-1] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：当前请求已经调用过方法getInputStream()
+2022-07-18 14:54:51,386 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 14:54:51,392 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 14:54:51,392 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 14:54:51,399 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 14:57:44,897 [RMI TCP Connection(4)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 14:57:45,009 [RMI TCP Connection(4)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 14:57:46,113 [RMI TCP Connection(4)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 14:58:35,544 [http-nio-8080-exec-4] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：当前请求已经调用过方法getInputStream()
+2022-07-18 15:00:09,222 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 15:00:09,226 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 15:00:09,227 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 15:00:09,234 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 15:00:36,717 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:00:36,807 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:00:37,828 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 15:02:09,459 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 15:02:09,471 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 15:02:09,471 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 15:02:09,478 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 15:02:58,892 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:02:58,995 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:03:00,131 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 15:08:13,987 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 15:08:13,995 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 15:08:13,995 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 15:08:14,002 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 15:23:06,853 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:23:06,944 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:23:08,003 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 15:25:26,272 [http-nio-8080-exec-7] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：For input string: "ddd"
+2022-07-18 15:34:33,015 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:34:33,117 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:34:34,223 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 15:37:22,867 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 15:37:22,873 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 15:37:22,874 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 15:37:22,879 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 15:48:23,244 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:48:23,346 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:48:24,405 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 15:54:22,962 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 15:54:22,970 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 15:54:22,970 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 15:54:22,977 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 15:55:42,218 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:55:42,299 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:55:43,253 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 15:58:07,285 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2022-07-18 15:58:07,292 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2022-07-18 15:58:07,293 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-07-18 15:58:07,301 [main] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-07-18 15:58:54,672 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 15:58:54,749 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 15:58:55,801 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:14:33,114 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:14:33,192 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:14:34,160 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:16:34,279 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:16:34,370 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:16:35,428 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:16:52,174 [http-nio-8080-exec-8] ERROR [com.example.exception.GlobalExceptionHandler] - 异常：null
+2022-07-18 16:26:19,360 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:26:19,437 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:26:20,468 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:28:04,607 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:28:04,705 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:28:05,829 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:32:42,469 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:32:42,582 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:32:43,928 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:39:50,860 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:39:50,942 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:39:51,917 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:44:36,540 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:44:36,622 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:44:37,613 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:46:06,105 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:46:06,189 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:46:07,171 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:49:28,313 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:49:28,411 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:49:29,516 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 16:54:17,933 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 16:54:18,045 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 16:54:19,094 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:02:55,507 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:02:55,622 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:02:56,873 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:08:19,270 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:08:19,369 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:08:20,429 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:16:26,994 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:16:27,094 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:16:28,351 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:22:00,225 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:22:00,311 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:22:01,362 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:24:47,899 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:24:47,988 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:24:49,100 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:29:10,251 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:29:10,342 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:29:11,409 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:33:45,060 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:33:45,171 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:33:46,474 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2022-07-18 17:35:03,114 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-07-18 17:35:03,191 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2022-07-18 17:35:04,206 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited

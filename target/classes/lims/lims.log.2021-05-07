@@ -1,0 +1,244 @@
+2021-05-07 09:44:33,453 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 09:44:33,507 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 09:44:33,532 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 09:44:34,513 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 09:44:34,899 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 09:44:37,106 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 09:44:38,230 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 09:46:26,743 [http-nio-8080-exec-5] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 09:54:24,786 [http-nio-8080-exec-8] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:36:32,898 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 10:36:32,903 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 10:36:32,904 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 10:36:32,904 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 10:36:32,904 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 10:36:32,904 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 10:37:43,946 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 10:37:43,998 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 10:37:44,025 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 10:37:45,119 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 10:37:45,648 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 10:37:48,411 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:37:49,557 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:37:59,236 [http-nio-8080-exec-6] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 10:38:01,814 [http-nio-8080-exec-7] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 10:39:55,343 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 10:39:55,353 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 10:39:55,353 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 10:39:55,353 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 10:39:55,354 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 10:39:55,354 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 10:41:14,122 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 10:41:14,162 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 10:41:14,190 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 10:41:15,099 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 10:41:15,450 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 10:41:17,788 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:41:18,566 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:41:23,460 [http-nio-8080-exec-5] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 10:41:28,477 [http-nio-8080-exec-6] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 10:45:13,826 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 10:45:13,835 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 10:45:13,836 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 10:45:13,837 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 10:45:13,837 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 10:45:13,837 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 10:45:57,260 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 10:45:57,320 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 10:45:57,351 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 10:45:58,338 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 10:45:58,673 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 10:46:01,065 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:46:01,867 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:46:07,207 [http-nio-8080-exec-5] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 10:46:08,846 [http-nio-8080-exec-6] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 10:51:15,957 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 10:51:15,966 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 10:51:15,966 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 10:51:15,967 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 10:51:15,967 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 10:51:15,968 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 10:51:36,592 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 10:51:36,639 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 10:51:36,660 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 10:51:37,517 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 10:51:37,862 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 10:51:40,218 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:51:41,110 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:51:44,972 [http-nio-8080-exec-5] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 10:51:46,220 [http-nio-8080-exec-6] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 10:52:17,106 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 10:52:17,114 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 10:52:17,115 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 10:52:17,115 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 10:52:17,115 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 10:52:17,116 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 10:52:48,483 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 10:52:48,533 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 10:52:48,564 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 10:52:49,708 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 10:52:53,078 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 10:52:54,545 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:52:55,242 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 10:53:04,528 [http-nio-8080-exec-5] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 10:53:05,671 [http-nio-8080-exec-7] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 10:53:58,163 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 10:53:58,172 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 10:53:58,172 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 10:53:58,172 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 10:53:58,172 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 10:53:58,173 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 12:13:19,812 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 12:13:19,860 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 12:13:19,883 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 12:13:20,914 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 12:13:21,252 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 12:13:23,994 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 12:13:24,936 [http-nio-8080-exec-4] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 12:13:40,979 [http-nio-8080-exec-10] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 12:13:48,923 [http-nio-8080-exec-3] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 12:14:55,782 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 13:37:35,750 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 13:37:35,756 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 13:37:35,756 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 13:37:35,757 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 13:37:35,757 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 13:37:35,758 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 15:42:05,930 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 15:42:05,988 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 15:42:06,022 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 15:42:07,170 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 15:42:07,510 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 15:42:10,379 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 15:42:11,807 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 15:42:15,210 [http-nio-8080-exec-5] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 15:42:17,784 [http-nio-8080-exec-6] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 15:43:27,794 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 15:43:27,804 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 15:43:27,805 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 15:43:27,806 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 15:43:27,806 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 15:43:27,806 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 15:44:36,545 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 15:44:36,596 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 15:44:36,619 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 15:44:43,344 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 15:44:43,672 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 15:44:45,499 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 15:44:46,129 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 15:44:50,680 [http-nio-8080-exec-4] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 15:44:51,977 [http-nio-8080-exec-5] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 15:45:06,995 [http-nio-8080-exec-8] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 15:48:00,339 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 15:48:00,349 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 15:48:00,349 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 15:48:00,349 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 15:48:00,349 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 15:48:00,350 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 15:48:25,462 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 15:48:25,510 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 15:48:25,537 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 15:48:26,543 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 15:48:26,888 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 15:48:29,409 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 15:48:30,363 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 15:48:38,056 [http-nio-8080-exec-4] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 15:48:48,070 [http-nio-8080-exec-7] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 15:48:53,104 [http-nio-8080-exec-2] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 15:49:24,715 [http-nio-8080-exec-1] ERROR [com.example.controller.BaseController] - addUser...
+2021-05-07 16:12:50,921 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 16:12:50,934 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 16:12:50,934 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 16:12:50,935 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 16:12:50,935 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 16:12:50,936 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 16:33:19,267 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 16:33:19,385 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 16:33:19,465 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 16:33:21,241 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 16:33:22,591 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 16:33:25,364 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:33:26,529 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:33:30,471 [http-nio-8080-exec-2] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 16:34:09,037 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 16:34:09,050 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 16:34:09,050 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 16:34:09,051 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 16:34:09,051 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 16:34:09,052 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 16:34:17,418 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 16:34:17,464 [RMI TCP Connection(6)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 16:34:17,500 [RMI TCP Connection(6)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 16:34:18,148 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 16:34:18,481 [RMI TCP Connection(6)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 16:34:34,970 [http-nio-8080-exec-9] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 16:37:57,982 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 16:37:57,992 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 16:37:57,992 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 16:37:57,992 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 16:37:57,992 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 16:37:57,993 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 16:38:18,806 [RMI TCP Connection(4)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 16:38:18,853 [RMI TCP Connection(4)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 16:38:18,883 [RMI TCP Connection(4)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 16:38:19,849 [RMI TCP Connection(4)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 16:38:20,187 [RMI TCP Connection(4)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 16:38:22,790 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:38:23,650 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:38:26,966 [http-nio-8080-exec-4] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 16:40:17,974 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 16:40:17,983 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 16:40:17,983 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 16:40:17,983 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 16:40:17,984 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 16:40:17,984 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 16:40:51,376 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 16:40:51,432 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 16:40:51,465 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 16:40:52,596 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 16:40:52,930 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 16:40:56,008 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:40:57,084 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:41:00,251 [http-nio-8080-exec-4] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 16:47:28,412 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 16:47:28,420 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 16:47:28,420 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 16:47:28,421 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 16:47:28,421 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 16:47:28,422 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 16:57:49,400 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 16:57:49,451 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 16:57:49,472 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 16:57:50,387 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 16:57:50,715 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 16:57:53,010 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:57:53,920 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 16:58:11,415 [http-nio-8080-exec-4] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 17:00:41,969 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 17:00:41,978 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 17:00:41,978 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 17:00:41,979 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 17:00:41,979 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 17:00:41,979 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2021-05-07 17:01:13,242 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 17:01:13,287 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 17:01:13,316 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 17:01:14,269 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 17:01:14,848 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 17:01:17,123 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 17:01:17,985 [http-nio-8080-exec-4] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 17:01:26,091 [http-nio-8080-exec-3] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 17:04:14,756 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2021-05-07 17:04:14,789 [RMI TCP Connection(3)-127.0.0.1] ERROR [com.alibaba.druid.pool.DruidAbstractDataSource] - maxIdle is deprecated
+2021-05-07 17:04:14,810 [RMI TCP Connection(3)-127.0.0.1] WARN  [com.alibaba.druid.pool.DruidDataSource] - removeAbandoned is true, not use in production.
+2021-05-07 17:04:15,632 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} inited
+2021-05-07 17:04:16,119 [RMI TCP Connection(3)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} inited
+2021-05-07 17:04:17,670 [http-nio-8080-exec-1] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 17:04:18,498 [http-nio-8080-exec-3] DEBUG [com.example.controller.BaseController] - dbProperties.getType():mysql
+2021-05-07 17:04:38,962 [http-nio-8080-exec-7] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-4} inited
+2021-05-07 17:38:12,721 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closing ...
+2021-05-07 17:38:12,728 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-3} closed
+2021-05-07 17:38:12,729 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closing ...
+2021-05-07 17:38:12,729 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-2} closed
+2021-05-07 17:38:12,730 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2021-05-07 17:38:12,730 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed

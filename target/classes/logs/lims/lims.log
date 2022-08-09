@@ -1,0 +1,8 @@
+2022-08-09 14:18:49,885 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-08-09 14:18:50,807 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closing ...
+2022-08-09 14:18:50,813 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2022-08-09 14:21:43,861 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-08-09 14:22:59,756 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-08-09 14:24:58,500 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-08-09 14:28:13,103 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2022-08-09 14:37:59,148 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited

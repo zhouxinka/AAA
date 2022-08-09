@@ -8,16 +8,187 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/tx
-       http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+       http://www.springframework.org/schema/tx/spring-tx-4.1.xsd ">
     <!--spring配置文件-->
 
     <!-- 开启注解 -->
     <context:annotation-config/>
 
+    <!-- 加载配置属性文件(base.properties)，然后利用${key}来获取配置文件里面的属性值 -->
+    <context:property-placeholder ignore-unresolvable="true" location="classpath:base.properties" />
+
     <!--开启自动扫描,只扫描com.example包下且带有Spring组件注解的类，但是除了Controller注解的类 -->
     <context:component-scan base-package="com.example.*">
-       <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
+
+    <!-- 事务：第一步，配置事务管理器（声明式事务） -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--注入属性dataSource,表明事务管理器要对哪个数据源进行管理  -->
+        <property name="dataSource" ref="dynamicDataSource"></property>
+    </bean>
+
+    <!--事务注解方式： 第二步，开启事务注解  -->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+
+    <!--注册sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--配置数据源属性，这里是动态数据源-->
+        <property name="dataSource" ref="dynamicDataSource"/>
+        <!--mapper.xml文件的路径 -->
+        <property name="mapperLocations" value="classpath:/mapper/*.xml"/>
+        <!--mybatis-config.xml文件的路径 -->
+        <property name="configLocation" value="classpath:/mybatis-config.xml"></property>
+    </bean>
+
+    <!-- 动态数据源 -->
+    <bean id="dynamicDataSource" class="com.example.dataSource.DynamicDataSource">
+        <property name="defaultTargetDataSource" ref="dataSource1"/>
+        <property name="targetDataSources">
+            <map>
+                <entry key="dataSource1" value-ref="dataSource1"/>
+                <!--<entry key="dataSource2" value-ref="dataSource2"/>-->
+                <!--<entry key="dataSource3" value-ref="dataSource3"/>-->
+            </map>
+        </property>
+    </bean>
+    <!-- 扫描basePackage下DAO接口,这个作用就是找到DAO接口，注册接口的实现类bean-->
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--注意 , 没有必要去指定 SqlSessionFactory 或 SqlSessionTemplate , 因为 MapperScannerConfigurer 将会创建 MapperFactoryBean 之后自动装配。
+        但是，如果你使用了一个以上的DataSource ,那么自动装配可能会失效 。
+        这种情况下 ,你可以使用 sqlSessionFactoryBeanName 或 sqlSessionTemplateBeanName 属性来设置正确的 bean 名称来使用。
+        注意 bean 的名称是必须的，而不是 bean 的引用，因此，value 属性在这里替代通常的 ref-->
+
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+
+        <!--扫描的包路径-->
+        <property name="basePackage" value="com.example.dao"/>
+
+        <!--这个属性是值扫描basePackage下带有MybatisDao注解的DAO接口，其他的不用扫描-->
+        <property name="annotationClass" value="com.example.annotations.MybatisDao"/>
+    </bean>
+
+    <!-- 第一个数据源配置-->
+    <bean id="dataSource1" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <!-- 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass -->
+        <property name="driverClassName" value="${jdbc.driver1}" />
+        <property name="url" value="${jdbc.url1}" />
+        <property name="username" value="${jdbc.username1}" />
+        <property name="password" value="${jdbc.password1}" />
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${jdbc.pool.init}" />
+        <property name="minIdle" value="${jdbc.pool.minIdle}" />
+        <property name="maxActive" value="${jdbc.pool.maxActive}" />
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="60000" />
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <!--sql心跳包 当只想重启数据库，不重启系统时，sql心跳包就是解决数据库重新连接的问题 -->
+        <property name="validationQuery" value="${jdbc.testSql}" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小（Oracle使用）
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20" /> -->
+
+        <!-- 配置监控统计拦截的filters -->
+        <property name="filters" value="stat" />
+    </bean>
+
+    <!-- 第二个数据源配置-->
+    <!--<bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        &lt;!&ndash; 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass &ndash;&gt;
+        <property name="driverClassName" value="${jdbc.driver2}" />
+
+        &lt;!&ndash; 基本属性 url、user、password &ndash;&gt;
+        <property name="url" value="${jdbc.url2}" />
+        <property name="username" value="${jdbc.username2}" />
+        <property name="password" value="${jdbc.password2}" />
+
+        &lt;!&ndash; 数据库连接池初始化连接时第一次要创建连接的个数 &ndash;&gt;
+        <property name="initialSize" value="${jdbc.pool.init}" />
+
+        &lt;!&ndash; 最小连接数  低于最小连接数连接池就会创建  默认为：0 接近maxIdle性能越好 &ndash;&gt;
+        <property name="minIdle" value="${jdbc.pool.minIdle}" />
+
+        &lt;!&ndash; 连接池中同时连接的最大连接（活动）数，表示单机并发可以支持n个  默认值为：8 &ndash;&gt;
+        <property name="maxActive" value="${jdbc.pool.maxActive}" />
+
+        &lt;!&ndash; 是否开启无用连接的回收机制 &ndash;&gt;
+        <property name="removeAbandonedTimeout" value="${jdbc.pool.removeAbandonedTimeout}"/>
+
+        &lt;!&ndash; 连接池超出配置时间时，将回收没用的连接 建议配置时间短一些，快回收 &ndash;&gt;
+        <property name="removeAbandoned" value="${jdbc.pool.removeAbandoned}"/>
+
+        &lt;!&ndash; 最大的等待时间 当连接池没有可用的连接，需要等待连接释放的最大时间，等待时间超过
+            就会抛出异常 默认为-1意为无限等待，配置maxWait避免线程池不够用而导致请求被无限挂起&ndash;&gt;
+        <property name="maxWait" value="${jdbc.pool.maxWait}" />
+
+        &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        &lt;!&ndash; sql 心跳 &ndash;&gt;
+        <property name="validationQuery" value="${jdbc.testSql2}" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+
+        &lt;!&ndash; 打开PSCache，并且指定每个连接上PSCache的大小（Oracle使用）
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20" /> &ndash;&gt;
+
+        &lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;
+        <property name="filters" value="stat" />
+    </bean>-->
+
+    <!-- 第三个数据源配置, 使用 BoneCP 数据库连接池 -->
+    <!--<bean id="dataSource3" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        &lt;!&ndash; 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass &ndash;&gt;
+        <property name="driverClassName" value="${jdbc.driver3}" />
+
+        &lt;!&ndash; 基本属性 url、user、password &ndash;&gt;
+        <property name="url" value="${jdbc.url3}" />
+        <property name="username" value="${jdbc.username3}" />
+        <property name="password" value="${jdbc.password3}" />
+
+        &lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;
+        <property name="initialSize" value="${jdbc.pool.init}" />
+        <property name="minIdle" value="${jdbc.pool.minIdle}" />
+        <property name="maxActive" value="${jdbc.pool.maxActive}" />
+
+        &lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;
+        <property name="maxWait" value="60000" />
+
+        &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <property name="validationQuery" value="${jdbc.testSql}" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+
+        &lt;!&ndash; 配置监控统计拦截的filters &ndash;&gt;
+        <property name="filters" value="stat" />
+    </bean>-->
+
+    <!--JDBC配置-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dynamicDataSource"></property>
+    </bean>
 
 
 </beans>

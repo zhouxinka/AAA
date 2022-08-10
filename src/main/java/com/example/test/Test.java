@@ -11,7 +11,6 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.junit.jupiter.api.DynamicTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -28,11 +27,11 @@ import java.util.Map;
  * @create time 2021-04-14-10:08
  */
 public class Test {
-    //@Autowired
+    @Autowired
     private TeacherServiceImpl teacherServiceImpl;
-
+    @org.junit.Test
     public void test(){
-        FileSystemXmlApplicationContext ac=new FileSystemXmlApplicationContext("/web/WEB-INF/applicationContext.xml");
+        FileSystemXmlApplicationContext ac=new FileSystemXmlApplicationContext("src/main//webapp/WEB-INF/applicationContext.xml");
         Sample sample = (Sample) ac.getBean("sample1");
         System.out.println(sample.toString());
         UserService userServiceImpl =  ac.getBean(UserService.class);
@@ -46,7 +45,7 @@ public class Test {
      * 那么就要在mybatis-config.xml里面配置<environments></environments>
      * 和<mappers></mappers>
      */
-
+    @org.junit.Test
     public void testSqlSession(){
         SqlSession sqlSession = null;
         try{
@@ -63,7 +62,7 @@ public class Test {
     /**
      * 测试使用自定义的DataSource操作数据库
      */
-    //@org.junit.Test
+    @org.junit.Test
     public void testDataSource(){
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -93,7 +92,7 @@ public class Test {
     /**
      * 测试使用httpClient发送的get请求
      */
-    //@org.junit.Test
+    @org.junit.Test
     public void testHttpClientWithGet(){
         String url = "http://localhost:8080/springdemo0414/a/testHttpClientWithGet";
         Map<String,String> params = new HashMap<>();
@@ -106,7 +105,7 @@ public class Test {
      * 测试使用httpClient发送的post请求
      * 发送的参数是json
      */
-    //@org.junit.Test
+    @org.junit.Test
     public void testHttpClientWithPost(){
         String url = "http://localhost:8080/springdemo0414/a/testHttpClientWithPost";
         String params = "{\"id\":\"1\",\"name\":\"列侬\"}";
@@ -117,7 +116,7 @@ public class Test {
      * 测试使用httpClient发送的post请求
      * 发送的参数是表单数据
      */
-    //@org.junit.Test
+    @org.junit.Test
     public void testHttpClientWithPost2(){
         String url = "http://localhost:8080/springdemo0414/a/testHttpClientWithPost2";
         Map<String,String> params = new HashMap<String,String>();

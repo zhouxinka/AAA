@@ -29,7 +29,7 @@
     var table = null;
     $(function() {
         var table_config = {
-            "aLengthMenu":[2,5,10],
+            "aLengthMenu":[5,10],
             "searching":false,//禁用搜索
             "lengthChange":true,
             "paging": true,//开启表格分页

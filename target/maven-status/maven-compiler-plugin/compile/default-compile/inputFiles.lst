@@ -38,6 +38,7 @@ D:\idea_workspace\AAA\src\main\java\com\example\annotations\MybatisDao.java
 D:\idea_workspace\AAA\src\main\java\com\example\entity\DBProperties.java
 D:\idea_workspace\AAA\src\main\java\com\example\utils\PropertiesLoader.java
 D:\idea_workspace\AAA\src\main\java\com\example\config\MyConfig.java
+D:\idea_workspace\AAA\src\main\java\com\example\aspect\TestAspect.java
 D:\idea_workspace\AAA\src\main\java\com\example\dao\CrudDao.java
 D:\idea_workspace\AAA\src\main\java\com\example\exception\GlobalExceptionHandler.java
 D:\idea_workspace\AAA\src\main\java\com\example\utils\Global.java

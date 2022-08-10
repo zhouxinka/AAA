@@ -3,12 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/mvc
-       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
     <!--此文件负责整个mvc中的配置-->
     <!-- 加载配置属性文件,然后在BaseController里面利用${key}来获取配置文件里面的属性值 -->
     <context:property-placeholder ignore-unresolvable="true" location="classpath:base.properties" />
@@ -18,6 +21,11 @@
 
     <!-- 配置注解驱动 可以将request参数与绑定到controller参数上 -->
     <mvc:annotation-driven/>
+
+    <!--开启AOP-->
+    <aop:aspectj-autoproxy/>
+    <!--将切面类注入到容器-->
+    <bean class="com.example.aspect.TestAspect"></bean>
 
     <!--静态资源映射-->
     <!--本项目把静态资源放在了webapp的statics目录下，资源映射如下-->

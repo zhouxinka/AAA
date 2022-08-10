@@ -37,7 +37,7 @@
 
 
   <!--配置自定义的监听器-->
-  <!--<listener>
+  <listener>
     <listener-class>com.example.listener.MyListener</listener-class>
-  </listener>-->
+  </listener>
 </web-app>

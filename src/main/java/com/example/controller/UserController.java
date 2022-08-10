@@ -59,7 +59,9 @@ public class UserController extends BaseController {
         System.out.println(bean.toString());
     }
     @ModelAttribute
-    public User get(@RequestParam(required = false) String id){
+    public User get(@RequestParam(required = false) String id,HttpServletRequest request){
+        System.out.println(request.getRequestURI());
+        System.out.println(request.getRequestURL());
         System.out.println("UserController里面的ModelAttribute注解的方法里面的id:"+id);
         User user = null;
         if(StringUtils.isNotBlank(id)){
@@ -101,15 +103,6 @@ public class UserController extends BaseController {
         HttpSession session = request.getSession();
         session.setAttribute("CURRENT_USER",user);
         return "index";
-    }
-
-    /**
-     * 前端输入/a/userInfo，跳转到查看所有用户的页面
-     * @return
-     */
-    @RequestMapping(value="/userInfo")
-    public String userInfo(){
-        return "userInfo";
     }
 
     @RequestMapping(value="/userInfo_2")
@@ -160,7 +153,7 @@ public class UserController extends BaseController {
         user.setGender("male");
         userServiceImpl.addUser(user,request);
         //重定向到a/userInfo请求
-        return "redirect:/a/userInfo";
+        return "redirect:/a/userInfo_2";
     }
     /**
      * 删除用户

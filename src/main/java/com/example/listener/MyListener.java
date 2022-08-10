@@ -31,7 +31,7 @@ public class MyListener implements ServletContextListener {
         }
         System.out.println("servletContext.getServletContextName():"+servletContext.getServletContextName());
         System.out.println("servletContext.getServerInfo():"+servletContext.getServerInfo());
-        System.out.println("servletContext.getVirtualServerName():"+servletContext.getVirtualServerName());
+        //System.out.println("servletContext.getVirtualServerName():"+servletContext.getVirtualServerName());
         String rootWebApplicationContextAttributeName = WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE;
         System.out.println("rootWebApplicationContextAttributeName:"+rootWebApplicationContextAttributeName);
         //在servletContext中获取父容器（spring容器），key是：“WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE”

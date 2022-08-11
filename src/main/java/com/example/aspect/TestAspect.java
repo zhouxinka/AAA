@@ -11,6 +11,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * @author zhou.peng
@@ -24,17 +25,15 @@ public class TestAspect {
     public void pointCut(){
         System.out.println("pointCut()...");
     }
-    @AfterReturning(value = "pointCut()", returning = "keys")
-    public void operate(JoinPoint joinPoint, Object keys){
-        System.out.println("返回结果:"+keys.toString());
+    @AfterReturning(value = "pointCut()", returning = "data")
+    public void operate(JoinPoint joinPoint, Object data){
         // 获取RequestAttributes
         RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
         // 从获取RequestAttributes中获取HttpServletRequest的信息
         HttpServletRequest request = (HttpServletRequest) requestAttributes
                 .resolveReference(RequestAttributes.REFERENCE_REQUEST);
-
         try {
-            // 从切面织入点处通过反射机制获取织入点处的方法
+            // 从切面织入点处通过反射机制获取织入点处的方法签名
             MethodSignature signature = (MethodSignature) joinPoint.getSignature();
             // 获取切入点所在的方法
             Method method = signature.getMethod();
@@ -45,11 +44,17 @@ public class TestAspect {
             methodName = className + "." + methodName;
             System.out.println("请求的方法名:"+methodName);
             // 请求的参数
-            request.getParameterMap();
-
-        } catch (Exception e2) {
-            e2.printStackTrace();
+            Map<String, String[]> parameterMap = request.getParameterMap();
+            for (String key : parameterMap.keySet()) {
+                System.out.println("请求参数的key是："+key);
+                String[] parameters = parameterMap.get(key);
+                for (String parameter : parameters) {
+                    System.out.println("请求参数value是："+parameter);
+                }
+            }
+            System.out.println("返回结果:"+data.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
     }
 }

@@ -21,7 +21,7 @@ import java.util.Map;
 @Aspect
 @Component
 public class TestAspect {
-    @Pointcut("execution(* com.example.controller.UserController.*(..))")
+    @Pointcut("execution(* com.example.controller.UserController.findAllUser_2(..))")
     public void pointCut(){
         System.out.println("pointCut()...");
     }

@@ -9,7 +9,7 @@
     </sql>
 
     <sql id="Base_Column">
-        id,name,age,gender
+        id,name,age,gender,create_date
     </sql>
 
     <delete id="delete">

@@ -36,12 +36,12 @@
             "bProcessing" : true,
             "bServerSide" : true,//是否在服务端分页
             "bAutoWidth" : false,
-            //"sort" : "position",
+            "sort" : "position",
             "deferRender":true,//延迟渲染
             "bStateSave" : false, //在第三页刷新页面，会自动到第一页
             "dom": '<l<\'#topPlugin\'>f>rt<ip><"clear">',
             "ordering": true,//全局禁用排序
-            "aaSorting": [2, 'desc'], // 默认排序
+            "aaSorting": [3, 'desc'], // 使用第三列降序排序
             "ajax": {
                 "type": "post",
                 "url":"${ctx}/findAllUser_2"
@@ -49,7 +49,7 @@
             deferRender: true,
             "aoColumns" : [{
                 "mData" : "id",
-                "orderable":false ,
+                "orderable":true ,
                 "sDefaultContent" : "",
                 "render":function (data, type, row, meta) {
                     console.log("data:"+data);//这一列的值即id
@@ -65,17 +65,21 @@
                 "sDefaultContent" : ""
             },{
                 "mData" : "age",
-                "orderable" : false,
+                "orderable" : true,
                 "sDefaultContent" : ""
             },{
                 "mData" : "gender",
+                "orderable" : false,
+                "sDefaultContent" : ""
+            },{
+            "mData" : "createDate",
                 "orderable" : false,
                 "sDefaultContent" : ""
             }],
             columnDefs: [{
                 "orderable" :false,
                 "sWidth":"28%",
-                "targets" : [4], // 指定的列
+                "targets" : [5], // 指定的列
                 "data" : "",
                 "render" : function(data, type, full, meta) {
                     var str = '';
@@ -156,6 +160,7 @@
                 <th>名字</th>
                 <th>年龄</th>
                 <th>性别</th>
+                <th>创建时间</th>
                 <th>操作</th>
             </tr>
             </thead>

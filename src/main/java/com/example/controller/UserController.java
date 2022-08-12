@@ -60,8 +60,8 @@ public class UserController extends BaseController {
     }
     @ModelAttribute
     public User get(@RequestParam(required = false) String id,HttpServletRequest request){
-        System.out.println(request.getRequestURI());
-        System.out.println(request.getRequestURL());
+        System.out.println("##################@ModelAttribute##################");
+        System.out.println("请求的路径是："+request.getRequestURL());
         System.out.println("UserController里面的ModelAttribute注解的方法里面的id:"+id);
         User user = null;
         if(StringUtils.isNotBlank(id)){
@@ -70,7 +70,8 @@ public class UserController extends BaseController {
         if(user==null){
             user = new User();
         }
-        System.out.println("UserController里面的ModelAttribute注解的方法里面的user:"+user.toString());
+        System.out.println("UserController里面的ModelAttribute注解的方法里面返回的user:"+user.toString());
+        System.out.println("##################@ModelAttribute##################");
         return user;
     }
 

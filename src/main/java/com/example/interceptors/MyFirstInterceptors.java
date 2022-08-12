@@ -28,7 +28,7 @@ public class MyFirstInterceptors implements HandlerInterceptor {
             System.out.println("session----->currentUser:"+currentUser.toString());
             return true;
         }
-        request.getRequestDispatcher("/WEB-INF/views/tips.jsp").forward(request,response);
+        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request,response);
         return false;
     }
     //对controller的返回结果进行二次处理，然后返回该结果

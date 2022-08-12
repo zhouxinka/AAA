@@ -52,11 +52,6 @@
 		<typeHandler handler="com.example.utils.EncryptTypeHandler"/>
 	</typeHandlers>
 
-	<!-- 分页插件配置 -->
-	<!--<plugins>
-		<plugin interceptor="com.example.interceptors.PageInterceptor">
-		</plugin>
-	</plugins>-->
 	<environments default="development">
 		<environment id="development">
 			<!--表示使用哪种事务管理器，这里是JDBC事务管理器-->

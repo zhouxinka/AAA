@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import cn.hutool.crypto.SecureUtil;
 import com.example.entity.Encrypt;
 import com.example.entity.Teacher;
 import com.example.service.TeacherService;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
 
@@ -29,6 +31,9 @@ import java.util.Map;
 @RequestMapping("${adminPath}")
 //@Scope("prototype")
 public class TeacherController extends BaseController {
+
+    private static final byte[] KEYS = "12345678abcdefgh".getBytes(StandardCharsets.UTF_8);
+
     static ObjectMapper mapper = new ObjectMapper();
 
     static {
@@ -65,6 +70,12 @@ public class TeacherController extends BaseController {
     @ResponseBody
     public String getTeacherByAge(@PathVariable(value = "age") Integer age) throws JsonProcessingException {
         List<Map<String, Object>> teacherList = teacherServiceImpl.getTeacherByAge(age);
+        //将phone字段解码
+        for(Map<String, Object> map:teacherList){
+            String phone = (String) map.get("phone");
+            String newPhone = SecureUtil.aes(KEYS).decryptStr(phone);
+            map.put("phone",newPhone);
+        }
         return mapper.writeValueAsString(teacherList);
     }
     @RequestMapping(value="/addTeacher")

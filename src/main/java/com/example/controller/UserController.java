@@ -4,6 +4,7 @@ import com.example.dataSource.DynamicDataSource;
 import com.example.entity.Result;
 import com.example.entity.User;
 import com.example.exception.MyException;
+import com.example.exception.NameException;
 import com.example.service.UserService;
 import com.example.utils.Global;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -185,6 +186,10 @@ public class UserController extends BaseController {
     @RequestMapping(value="/testMyException")
     public void testMyException(){
         MyException.throwMyException("404","资源不存在！！！");
+    }
+    @RequestMapping(value="/testNameException")
+    public void testNameException(){
+        throw new NameException("500","名字异常");
     }
     @RequestMapping(value="/delete")
     public String delete(User user, RedirectAttributes redirectAttributes){

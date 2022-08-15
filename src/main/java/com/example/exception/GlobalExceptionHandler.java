@@ -17,16 +17,19 @@ public class GlobalExceptionHandler {
     private Logger log = Logger.getLogger(GlobalExceptionHandler.class);
     //当抛出名字异常时触发这个方法,比如记录日志，转发到异常页面，通知邮件或者短信
     @ExceptionHandler(value = NameException.class)
-        public ModelAndView handleNameException(Exception e){
-            System.out.println("异常："+e);
-            ModelAndView modelAndView = new ModelAndView();
-            modelAndView.addObject("msg","名字不正确");
-            modelAndView.setViewName("nameException");
-            return modelAndView;
+    public ModelAndView handleNameException(Exception e){
+        System.out.println("发生了NameException异常");
+        System.out.println(e.toString());
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("msg","名字不正确");
+        modelAndView.setViewName("nameException");
+        return modelAndView;
 
     }
     @ExceptionHandler(MyException.class)
     public <T> Result<T> handleMyException(MyException e) {
+        System.out.println("发生了MyException异常");
+        System.out.println(e.toString());
         return Result.error(e.getCode(), e.getMessage());
     }
     //处理其他异常

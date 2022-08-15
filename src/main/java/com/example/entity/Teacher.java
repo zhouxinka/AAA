@@ -1,11 +1,16 @@
 package com.example.entity;
 
+import com.example.sensitive.Sensitive;
+import com.example.sensitive.SensitiveStrategy;
+
 /**
  * @author zhoupeng
  * @create time 2021-05-07-16:51
  */
 public class Teacher extends DataEntity<Teacher>{
     private Integer id;
+    //这个注解是返回结果时数据脱敏
+    @Sensitive(strategy = SensitiveStrategy.USERNAME)
     private String name;
     private int age;
     private String gender;

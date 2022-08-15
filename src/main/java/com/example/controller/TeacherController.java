@@ -83,7 +83,7 @@ public class TeacherController extends BaseController {
         Teacher teacher = new Teacher();
         teacher.setName("blincon");
         teacher.setAge(45);
-        teacher.setGender("femal");
+        teacher.setGender("female");
         teacher.setPhone(new Encrypt("13916274799"));
         teacherServiceImpl.addTeacher(teacher);
         //重定向到a/userInfo请求

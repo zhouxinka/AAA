@@ -7,9 +7,12 @@ import java.util.List;
 import java.util.Map;
 
 public interface TeacherService {
-    List<Teacher> findAllTeacher();
+    List<Teacher> findAllTeacher(Map<String,Object> map);
+    List<Teacher> findAllTeacherNoPage(Map<String,Object> map);
     Teacher getTeacherById(int id);
     List<Map<String,Object>> getTeacherByAge(int age);
-    void addTeacher(Teacher teacher);
+    void addTeacher();
     Teacher getTeacherByPhone(Encrypt phone);
+
+    void addTeacherToSearch(Map<String,Object> map);
 }

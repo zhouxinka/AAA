@@ -3,7 +3,10 @@ package com.example.controller;
 import cn.hutool.crypto.SecureUtil;
 import com.example.entity.Encrypt;
 import com.example.entity.Teacher;
+import com.example.entity.User;
 import com.example.service.TeacherService;
+import com.example.utils.EncodePhoneUtil;
+import com.example.utils.Global;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonSerializer;
@@ -18,8 +21,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -31,11 +37,7 @@ import java.util.Map;
 @RequestMapping("${adminPath}")
 //@Scope("prototype")
 public class TeacherController extends BaseController {
-
-    private static final byte[] KEYS = "12345678abcdefgh".getBytes(StandardCharsets.UTF_8);
-
     static ObjectMapper mapper = new ObjectMapper();
-
     static {
         mapper.getSerializerProvider().setNullValueSerializer(new JsonSerializer<Object>() {
             @Override
@@ -49,46 +51,59 @@ public class TeacherController extends BaseController {
     private TeacherService teacherServiceImpl;
 
     @RequestMapping(value="/teacherInfo")
-    public String teacherInfo(Model model){
-        //Teacher teacher = teacherServiceImpl.getTeacherById(1);
-        //System.out.println(teacher.toString());
-        //System.out.println("===================================");
-        List<Teacher> list = teacherServiceImpl.findAllTeacher();
-        for (Teacher teacher : list) {
-            System.out.println(teacher.toString());
-        }
-        model.addAttribute("list",list);
+    public String teacherInfo(){
         return "teacherInfo";
     }
+
+    @RequestMapping(value="/findTeacher",produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public String findTeacher(HttpServletRequest request) throws JsonProcessingException {
+        System.out.println("###############TeacherController findTeacher###############");
+        String draw = request.getParameter("draw");
+        String start = request.getParameter("start");
+        String length = request.getParameter("length");
+        String name = request.getParameter("name");
+        String phone = request.getParameter("phone");
+        System.out.println("draw:"+draw);
+        System.out.println("start:"+start);
+        System.out.println("length:"+length);
+        System.out.println("name:"+name);
+        System.out.println("phone:"+phone);
+        Map<String,Object> map = new HashMap<>();
+        map.put("name",name);
+        if(phone==null){
+            map.put("phone",null);
+        }else{
+            map.put("phone",new Encrypt(phone));
+        }
+
+        map.put("start",Integer.parseInt(start));
+        map.put("length",Integer.parseInt(length));
+        List<Teacher> list = teacherServiceImpl.findAllTeacher(map);
+        List<Teacher> allTeacherNoPage = teacherServiceImpl.findAllTeacherNoPage(map);
+        String data = new ObjectMapper().writeValueAsString(list);
+        System.out.println("data:"+data);
+        String result = "{\"data\":" + data + ",\"length\":"+list.size()+",\"draw\":"+draw+",\"recordsTotal\":"+allTeacherNoPage.size()+",\"recordsFiltered\":"+allTeacherNoPage.size()+"}";
+        return result;
+    }
+
     @RequestMapping(value="/getTeacherByPhone/{phone}")
     @ResponseBody
     public Teacher getTeacherByPhone(@PathVariable(value = "phone") String phone){
-        Teacher teacherByPhone = teacherServiceImpl.getTeacherByPhone(new Encrypt(phone));
-        return teacherByPhone;
+        return teacherServiceImpl.getTeacherByPhone(new Encrypt(phone));
     }
+
     @RequestMapping(value="/getTeacherByAge/{age}", produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String getTeacherByAge(@PathVariable(value = "age") Integer age) throws JsonProcessingException {
-        List<Map<String, Object>> teacherList = teacherServiceImpl.getTeacherByAge(age);
-        //将phone字段解码
-        for(Map<String, Object> map:teacherList){
-            String phone = (String) map.get("phone");
-            String newPhone = SecureUtil.aes(KEYS).decryptStr(phone);
-            map.put("phone",newPhone);
-        }
-        return mapper.writeValueAsString(teacherList);
+        return mapper.writeValueAsString(teacherServiceImpl.getTeacherByAge(age));
     }
     @RequestMapping(value="/addTeacher")
     public String addTeacher(){
-        Teacher teacher = new Teacher();
-        teacher.setName("blincon");
-        teacher.setAge(45);
-        teacher.setGender("female");
-        teacher.setPhone(new Encrypt("13916274799"));
-        teacherServiceImpl.addTeacher(teacher);
-        //重定向到a/userInfo请求
-        return "redirect:/a/teacherInfo";
+        teacherServiceImpl.addTeacher();
+        return "redirect:"+ Global.getAdminPath()+"/teacherInfo";
     }
+
     /**
      * @ModelAttribute修是的方法会先于@RequestMapping修饰的方法执行，并且拿到请求里面的参数
      * @param model
@@ -99,6 +114,7 @@ public class TeacherController extends BaseController {
         model.addAttribute("test","it is a test...");
         System.out.println("string=========>:"+string);
     }
+
     @RequestMapping(value="/test")
     public void testModelAttribute2(Model model,RedirectAttributes redirectAttributes){
         String test = (String)model.getAttribute("test");

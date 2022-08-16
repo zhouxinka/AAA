@@ -19,7 +19,7 @@
 </head>
 <body>
 <p align="center">首页</p>
-<a href="${ctx}/userInfo_2" style="text-decoration:none">查看用户信息-2</a>
+<a href="${ctx}/userInfo_2" style="text-decoration:none">查看用户信息</a>
 <a href="${ctx}/teacherInfo" style="text-decoration:none">查看教师信息</a>
 <a href="${ctx}/testJSP" style="text-decoration:none">测试按钮</a>
 <a href="${ctx}/testHttpClientWithGet?name=zhangsan&age=35" style="text-decoration: none">get请求</a>

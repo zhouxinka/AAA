@@ -10,9 +10,11 @@ import java.util.Map;
 
 @MybatisDao
 public interface TeacherDao {
-    List<Teacher> findAllTeacher();
+    List<Teacher> findAllTeacher_2(@Param("map") Map<String,Object> map);
+    List<Teacher> findAllTeacherNoPage(@Param("map") Map<String,Object> map);
     Teacher getTeacherById(int id);
     List<Map<String,Object>> getTeacherByAge(int age);
-    void addTeacher(Teacher teacher);
+    Integer addTeacher(Teacher teacher);
     Teacher getTeacherByPhone(@Param("phone") Encrypt phone);
+    void addTeacherToSearch(@Param("map") Map<String,Object> map);
 }

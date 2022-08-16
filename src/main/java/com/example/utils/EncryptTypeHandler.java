@@ -13,6 +13,7 @@ import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * @author zhou.peng
@@ -22,20 +23,17 @@ import java.sql.SQLException;
 @MappedJdbcTypes(JdbcType.VARCHAR)
 @MappedTypes(Encrypt.class)
 public class EncryptTypeHandler extends BaseTypeHandler<Encrypt> {
-
-    private static final byte[] KEYS = "12345678abcdefgh".getBytes(StandardCharsets.UTF_8);
-
     /**
      * 设置参数
      */
     @Override
     public void setNonNullParameter(PreparedStatement ps, int i, Encrypt parameter, JdbcType jdbcType) throws SQLException {
+        System.out.println("Encrypt:"+parameter.toString());
         if (parameter == null || parameter.getValue() == null) {
             ps.setString(i, null);
             return;
         }
-        AES aes = SecureUtil.aes(KEYS);
-        String encrypt = aes.encryptHex(parameter.getValue());
+        String encrypt = EncodePhoneUtil.encrypt(parameter.getValue());
         ps.setString(i, encrypt);
     }
 
@@ -44,7 +42,6 @@ public class EncryptTypeHandler extends BaseTypeHandler<Encrypt> {
      */
     @Override
     public Encrypt getNullableResult(ResultSet rs, String columnName) throws SQLException {
-        System.out.println("#############rs.getString(columnName)#############");
         return decrypt(rs.getString(columnName));
     }
 
@@ -53,7 +50,6 @@ public class EncryptTypeHandler extends BaseTypeHandler<Encrypt> {
      */
     @Override
     public Encrypt getNullableResult(ResultSet rs, int columnIndex) throws SQLException {
-        System.out.println("#############rs.getString(columnIndex)#############");
         return decrypt(rs.getString(columnIndex));
     }
 
@@ -62,7 +58,6 @@ public class EncryptTypeHandler extends BaseTypeHandler<Encrypt> {
      */
     @Override
     public Encrypt getNullableResult(CallableStatement cs, int columnIndex) throws SQLException {
-        System.out.println("#############cs.getString(columnIndex)#############");
         return decrypt(cs.getString(columnIndex));
     }
 
@@ -70,6 +65,6 @@ public class EncryptTypeHandler extends BaseTypeHandler<Encrypt> {
         if (null == value) {
             return null;
         }
-        return new Encrypt(SecureUtil.aes(KEYS).decryptStr(value));
+        return new Encrypt(EncodePhoneUtil.decrypt(value));
     }
 }

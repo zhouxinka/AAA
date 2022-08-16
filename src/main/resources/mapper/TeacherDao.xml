@@ -11,12 +11,70 @@
     <sql id="Base_Column_List">
         id, name, age, gender, phone
     </sql>
-    <select id="findAllTeacher" resultMap="BaseResultMap">
+    <select id="findAllTeacher" resultMap="BaseResultMap" parameterType="java.util.Map">
         select
         <include refid="Base_Column_List"></include>
         from teacher
+        <where>
+            <if test="map.name != null and map.name != ''">
+                name like concat ('%',#{map.name},'%')
+            </if>
+            <if test="map.phone != null and map.phone !=''">
+                AND phone like #{map.phone}
+            </if>
+        </where>
+        order by id limit #{map.start},#{map.length}
     </select>
+    <select id="findAllTeacher_2" resultMap="BaseResultMap" parameterType="java.util.Map">
+        select
+        t.*
+        from teacher t left join teacher_search ts on t.id = ts.teacher_id
+        <where>
+            <if test="map.name != null and map.name != ''">
+                t.name like concat ('%',#{map.name},'%')
+            </if>
+            <if test="map.phone != null and map.phone !=''">
+                AND (
+                ts.index_1 = #{map.phone}
+                or index_2 = #{map.phone}
+                or index_3 = #{map.phone}
+                or index_4 = #{map.phone}
+                or index_5 = #{map.phone}
+                or index_6 = #{map.phone}
+                or index_7 = #{map.phone}
+                or index_8 = #{map.phone}
+                or index_9 = #{map.phone}
+                )
 
+            </if>
+        </where>
+        order by id desc limit #{map.start},#{map.length}
+    </select>
+    <select id="findAllTeacherNoPage" resultMap="BaseResultMap" parameterType="java.util.Map">
+        select
+        t.*
+        from teacher t left join teacher_search ts on t.id = ts.teacher_id
+        <where>
+            <if test="map.name != null and map.name != ''">
+                t.name like concat ('%',#{map.name},'%')
+            </if>
+            <if test="map.phone != null and map.phone !=''">
+                AND (
+                ts.index_1 = #{map.phone}
+                or index_2 = #{map.phone}
+                or index_3 = #{map.phone}
+                or index_4 = #{map.phone}
+                or index_5 = #{map.phone}
+                or index_6 = #{map.phone}
+                or index_7 = #{map.phone}
+                or index_8 = #{map.phone}
+                or index_9 = #{map.phone}
+                )
+
+            </if>
+        </where>
+        order by id desc
+    </select>
     <select id="getTeacherById" resultType="com.example.entity.Teacher" parameterType="int">
         select
         <include refid="Base_Column_List"></include>
@@ -29,7 +87,7 @@
         from teacher where age=#{age}
     </select>
 
-    <insert id="addTeacher">
+    <insert id="addTeacher"  useGeneratedKeys = "true"   keyProperty = "id" >
         insert into teacher
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="name != null">
@@ -58,6 +116,80 @@
             </if>
             <if test="phone != null and phone!=''">
                 #{phone,jdbcType=VARCHAR},
+            </if>
+
+        </trim>
+    </insert>
+    <insert id="addTeacherToSearch" parameterType="java.util.Map">
+        insert into teacher_search
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="map.teacher_id != null">
+                teacher_id,
+            </if>
+            <if test="map.phone != null">
+                phone,
+            </if>
+            <if test="map.index_1 != null">
+                index_1,
+            </if>
+            <if test="map.index_2 != null">
+                index_2,
+            </if>
+            <if test="map.index_3 != null">
+                index_3,
+            </if>
+            <if test="map.index_4 != null">
+                index_4,
+            </if>
+            <if test="map.index_5 != null">
+                index_5,
+            </if>
+            <if test="map.index_6 != null">
+                index_6,
+            </if>
+            <if test="map.index_7 != null">
+                index_7,
+            </if>
+            <if test="map.index_8 != null">
+                index_8,
+            </if>
+            <if test="map.index_9 != null">
+                index_9
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="map.teacher_id != null and map.teacher_id!=''">
+                #{map.teacher_id},
+            </if>
+            <if test="map.phone != null">
+                #{map.phone},
+            </if>
+            <if test="map.index_1 != null and map.index_1!=''">
+                #{map.index_1},
+            </if>
+            <if test="map.index_2 != null and map.index_2!=''">
+                #{map.index_2},
+            </if>
+            <if test="map.index_3 != null and map.index_3!=''">
+                #{map.index_3},
+            </if>
+            <if test="map.index_4 != null and map.index_4!=''">
+                #{map.index_4},
+            </if>
+            <if test="map.index_5 != null and map.index_5!=''">
+                #{map.index_5},
+            </if>
+            <if test="map.index_6 != null and map.index_6!=''">
+                #{map.index_6},
+            </if>
+            <if test="map.index_7 != null and map.index_7!=''">
+                #{map.index_7},
+            </if>
+            <if test="map.index_8 != null and map.index_8!=''">
+                #{map.index_8},
+            </if>
+            <if test="map.index_9 != null and map.index_9!=''">
+                #{map.index_9},
             </if>
 
         </trim>

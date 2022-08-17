@@ -99,7 +99,7 @@ public class TeacherController extends BaseController {
         return mapper.writeValueAsString(teacherServiceImpl.getTeacherByAge(age));
     }
     @RequestMapping(value="/addTeacher")
-    public String addTeacher(){
+    public String addTeacher() throws Exception {
         teacherServiceImpl.addTeacher();
         return "redirect:"+ Global.getAdminPath()+"/teacherInfo";
     }

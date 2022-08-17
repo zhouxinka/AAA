@@ -9,6 +9,7 @@ import com.example.utils.EncodePhoneUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
@@ -64,17 +65,33 @@ public class TeacherServiceImpl extends Exception implements TeacherService {
         map.put("index_9",list.get(8));
         return map;
     }
+
+    /**
+     * Transactional默认只回滚RuntimeException异常以及他的子类异常，
+     * 对于Exception异常是不会回滚的，
+     * 要想对Exception也回滚那就加上rollbackFor = Exception.class
+     * @throws Exception
+     */
+    @Transactional(rollbackFor = Exception.class)
     @Override
-    public void addTeacher() {
-        Teacher teacher = new Teacher();
-        teacher.setName("woody");
-        teacher.setAge(31);
-        teacher.setGender("male");
-        teacher.setPhone(new Encrypt("15255429942"));
-        teacherDao.addTeacher(teacher);
-        Map<String, Object> map = getParamsForAddTeacherToSearch(teacher);
-        //发布事件
-        applicationContext.publishEvent(new AddTeacherEvent(this,map));
+    public void addTeacher() throws Exception {
+        try{
+            Teacher teacher = new Teacher();
+            teacher.setName("woody");
+            teacher.setAge(31);
+            teacher.setGender("male");
+            teacher.setPhone(new Encrypt("15255429942"));
+            teacherDao.addTeacher(teacher);
+            Map<String, Object> map = getParamsForAddTeacherToSearch(teacher);
+            //发布事件
+            applicationContext.publishEvent(new AddTeacherEvent(this,map));
+            //人为制造一个异常
+            //int i = 2/0;
+        }catch (Exception e){
+            //异常被捕获之后如果不抛出新异常是不会回滚的
+            //throw new Exception("添加教师信息出现异常。");
+        }
+
     }
     @Override
     public void addTeacherToSearch(Map<String,Object> map) {

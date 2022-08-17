@@ -11,7 +11,7 @@ public interface TeacherService {
     List<Teacher> findAllTeacherNoPage(Map<String,Object> map);
     Teacher getTeacherById(int id);
     List<Map<String,Object>> getTeacherByAge(int age);
-    void addTeacher();
+    void addTeacher() throws Exception;
     Teacher getTeacherByPhone(Encrypt phone);
 
     void addTeacherToSearch(Map<String,Object> map);

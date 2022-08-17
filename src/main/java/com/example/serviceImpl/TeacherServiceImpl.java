@@ -54,15 +54,9 @@ public class TeacherServiceImpl extends Exception implements TeacherService {
         String newPhone = EncodePhoneUtil.encrypt(phone);
         map.put("phone",newPhone);
         List<String> list = EncodePhoneUtil.splitAndEncrypt(phone);
-        map.put("index_1",list.get(0));
-        map.put("index_2",list.get(1));
-        map.put("index_3",list.get(2));
-        map.put("index_4",list.get(3));
-        map.put("index_5",list.get(4));
-        map.put("index_6",list.get(5));
-        map.put("index_7",list.get(6));
-        map.put("index_8",list.get(7));
-        map.put("index_9",list.get(8));
+        for (int i=0;i<list.size();i++) {
+            map.put("index_"+(i+1),list.get(i));
+        }
         return map;
     }
 
